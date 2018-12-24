@@ -53,14 +53,24 @@ int Compute(char *str)
 	}
 	return OPND[top1];//运算对象栈栈顶元素就是运算结果
 }
+int testCase(char * expression)
+{
+    strcat(expression, "#");
+    int result = Compute(expression);
+
+    return result;
+}
 
 int main()
 {
-	char str[100];
+	//char str[100];
 	int result;
-	printf ("请输入一个算术表达式");
-	scanf ("%s",str);strcat(str,"#");//接收键盘输入并加上定界符#
-	result=Compute(str);
+    // printf ("请输入一个算术表达式");
+	// scanf ("%s",str);strcat(str,"#");//接收键盘输入并加上定界符#
+	// result=Compute(str);
+
+    char str[50]="1+3-5*2/4 - 1-1-1-1-1-1-1-1-1-1";
+    result = testCase(str);
 	printf ("表达式的值是:%d\n",result);
 	return 0;
 }
