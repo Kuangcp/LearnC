@@ -16,13 +16,16 @@ int main()
     {
         printf("I am child process.I am exiting.\n");
         exit(0);
+        // 至此, 该子进程就是 僵死进程
     }
     printf("I am father process.I will sleep two seconds\n");
     //等待子进程先退出
     sleep(2);
-    //输出 zombie 进程信息
+    
+    //输出进程信息
     system("ps -o pid,ppid,state,tty,command");
     printf("father process is exiting.\n");
     
     return 0;
+    // 至此, 父进程就执行结束了, 所以父进程会退出, 子进程也会被回收
 }
