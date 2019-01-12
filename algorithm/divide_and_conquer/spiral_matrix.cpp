@@ -8,13 +8,15 @@ void generate_data(int number,int begin,int size);
 
 int data[N][N]={0};
 
+// 生成螺旋矩阵
 int main(int argc, char *args[])
 {
 	int size = 6;
 	if (argc == 2)
 	{
 		size = atoi(args[1]);
-	}else
+	}
+	else
 	{
 		printf("use default size=%d\n", size);
 	}
@@ -48,7 +50,7 @@ void show_result(int size)
 	for (i=0;i<size;i++)
 	{
 		for(j=0;j<size;j++)
-			printf ("%4d",data[i][j]);
+			printf ("%3d",data[i][j]);
 		printf ("\n");
 	}
 	return;
