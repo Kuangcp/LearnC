@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
-void main()
+
+int main()
 {
 	int *p,t;
 	p=(int * )malloc(40*sizeof(int));
@@ -16,4 +17,5 @@ void main()
 	}*/
 	for (t=0;t<40;++t) printf ("\t%d\n",*(p+t));
 	free (p);
+	return 0;
 }
