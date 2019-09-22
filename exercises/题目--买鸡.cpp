@@ -1,6 +1,6 @@
 //一百块钱，买一百只鸡。公鸡：5元 母鸡：3 小鸡：一块3只
 #include<stdio.h>
-main()
+int main()
 {
 	int a,b,c;
 	a=1,b=1,c=3;
@@ -11,9 +11,10 @@ main()
 			for(b=1;b<33;b++)  
 			{    
 				if ((5*a+3*b+c/3==100)&&(a+b+c==100))   
-					printf("公鸡有%d只母鸡有%d只小鸡有%d只\n",a,b,c); 
+					printf("公鸡有 %-3d 只母鸡有 %-3d 只小鸡有 %-3d 只\n",a,b,c); 
 			}
 		}
 	}
+	return 0;
 }
 
