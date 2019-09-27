@@ -37,7 +37,7 @@ void quick_all(int *Q,int data_size)//检查全局，再次递归调用
 }
 
 
-void main()
+int main()
 {
 	int data[7]={2,3,1,4,9,5,2},i;
 	    /*for (i=0;i<7;i++)
@@ -49,6 +49,7 @@ void main()
 	quick_all(data,7);//只检查一遍就够了？
 	for (i=0;i<7;i++)
 		printf ("%2d\n",data[i]);
+	return 0;
 }
 
 //以下的句子还有问题：
