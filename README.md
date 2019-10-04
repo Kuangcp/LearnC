@@ -10,4 +10,3 @@ Run： sh cpp.sh <verb> <args>
   -c            清除当前目录所有可执行文件
   -h            帮助
 ```
-
