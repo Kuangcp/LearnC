@@ -62,9 +62,9 @@ pCur=pCur->next;
 }while(pCur!=plist->phead);
 printf("ThelengthoftheList:%d\n",plist->len);
 }
- 
+
 约瑟夫回环函数实现
- 
+
 void joseph(Linklist*plist,intm)//约瑟夫回环函数实现
 {
 node_t *pPre=plist->ptail;
