@@ -6,6 +6,6 @@ int main(){
     printf("请输入任意一个数值");
     scanf("%d", &input);
     int result = abs(input);
-    printf("绝对值是%d\n", input);
+    printf("绝对值是 %d\n", result);
     return 0;
 }
