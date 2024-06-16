@@ -10,3 +10,6 @@ Run： sh cpp.sh <verb> <args>
   -c            清除当前目录所有可执行文件
   -h            帮助
 ```
+
+## 开发
+1. Vscode安装 C/C++ 插件，配置编译器

@@ -38,11 +38,12 @@ void putabc()//定义用户函数。以特殊格式输出分数 ，等级
 }
 
 //程序主要部分：
-main()
+int main()
 {
 	printf("score,score,score\n");
 	scanf("%f,%f,%f",&a,&b,&c);
 	sort();//调用已定义的函数
-	putabc();//调用已定义的函数	
+	putabc();//调用已定义的函数
+    return 0;
 }
 //模块化的程序
