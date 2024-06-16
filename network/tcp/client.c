@@ -1,4 +1,3 @@
-
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -12,6 +11,7 @@
 
 #define SERV_TCP_PORT 8000 /* server's port */
 
+// https://www.cnblogs.com/straight/articles/7660889.html
 int main(int argc, char *argv[])
 {
     int sockfd;
